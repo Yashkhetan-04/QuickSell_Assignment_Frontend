@@ -1,52 +1,83 @@
-# Getting Started with Create React App
+# QuickSell FrontendAssignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## About the Project
 
-## Available Scripts
+This project is a *React-based Kanban Board application* that interfaces with the provided API by *Quicksell*. The application allows users to manage and visualize tickets, providing dynamic grouping and sorting features to enhance workflow management.
 
-In the project directory, you can run:
 
-### `yarn start`
+## 🖥️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Frontend :*
+<code><img height="40" src="https://raw.githubusercontent.com/AnmolVerma404/AnmolVerma404/main/gif/css.webp" alt="css"></code>
+<code><img height="40" src="https://raw.githubusercontent.com/AnmolVerma404/AnmolVerma404/main/gif/react.webp" alt="react"></code>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Key Features
 
-### `yarn test`
+- *Dynamic Grouping*: Users can group tickets based on:
+  - *Status* (e.g., Backlog, In Progress, Done)
+  - *User* (individual users assigned to tickets)
+  - *Priority* (Urgent, High, Medium, Low, No priority)
+  
+- *Sorting Options*: Users can sort tickets by:
+  - *Priority* (Urgent, High, Medium, Low, No priority)
+  - *Title* (alphabetical sorting)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- *Priority Levels*: Each priority level is mapped to a corresponding value:
+  - *Urgent*: 4
+  - *High*: 3
+  - *Medium*: 2
+  - *Low*: 1
+  - *No Priority*: 0
 
-### `yarn build`
+### API Integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application is integrated with the API provided by *Quicksell* to fetch and display ticket data, allowing users to manage tasks effectively.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Prerequisites
 
-### `yarn eject`
+- *Node.js* installed on your system.
+- Familiarity with *React.js*.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Installation
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   bash
+   git clone https://github.com/yourusername/kanban-board-app.git
+2. Navigate to the project directory:
+   bash
+   cd kanban-board-app
+3. Install the necessary dependencies:
+   bash
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Running the App
+To start the application, run:
+bash
+npm start
+```
+This will start the development server, and the app will be accessible at http://localhost:3000.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Usage
 
-## Learn More
+This React-based Kanban board app provides a dynamic, user-friendly interface to manage tasks effectively. Once the app is running, users can:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- *Group tickets* dynamically by:
+  - *Status*: Track progress across various stages like "Backlog," "In Progress," and "Done."
+  - *User*: Organize tasks by user to see who's working on what.
+  - *Priority*: Prioritize tasks as "Urgent," "High," "Medium," "Low," or "No priority."
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- *Sort tickets* by:
+  - *Priority*: Arrange tasks based on their urgency and importance.
+  - *Title*: Alphabetically order tasks for quick navigation.
 
-## Preview
+- *Manage ticket workflows*:
+  - Drag and drop tickets between columns to update their status.
+  - View detailed ticket information and manage task assignments and priorities.
 
-![Desktop Screenshot 1](./preview/Desktop-1.png)
-![Desktop Screenshot 2](./preview/Desktop-2.png)
-![Mobile Screenshot 1](./preview/Mobile-1.png)
+### Deployed Application
+
+You can access the live version of the application at the following link:  
+[QuickSell](https://voluble-puffpuff-11a8f7.netlify.app/)
+
